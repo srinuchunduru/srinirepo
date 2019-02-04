@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing micro...
+      - npm i --save micro
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+  build:
+    commands:
+      - npm build
+  post_build:
+    commands:
+artifacts:
+  files:
+    - index.js
+    - package-lock.json
+    - package.json
