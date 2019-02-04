@@ -7,21 +7,21 @@ function randomNumber (){
     return Math.random();
  }
 
-const server = micro(async (req, res) => {
+/*const server = micro(async (req, res) => {
     return {
         num: randomNumber()
     }
   });
 
   
-  server.listen(defaultPort) ;
+  server.listen(defaultPort) ; */
 
- /*module.exports = (req,res) =>{
+ module.exports = (req,res) =>{
     return {
         num: randomNumber()+'Welcome to node js'
     }
    // 'Welcome to node js';
-}*/
+}
 
 
  
