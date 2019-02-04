@@ -15,7 +15,7 @@ phases:
       - npm build
   post_build:
     commands:
-      - npm start
+     
 artifacts:
   files:
     - index.js
