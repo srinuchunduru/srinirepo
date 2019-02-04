@@ -1,24 +1,26 @@
 
-/*const micro = require('micro')
+const micro = require('micro')
 
-var defaultPort = process.env.PORT || 4200;
+const defaultPort = process.env.PORT || 3443;
+
+function randomNumber (){
+    return Math.random();
+ }
 
 const server = micro(async (req, res) => {
     return {
         num: randomNumber()
     }
-  })
+  });
 
-  server.listen(defaultPort) */
+  server.listen(defaultPort) ;
 
-module.exports = (req,res) =>{
+ /*module.exports = (req,res) =>{
     return {
-        num: randomNumber()
+        num: randomNumber()+'Welcome to node js'
     }
    // 'Welcome to node js';
-}
-function randomNumber (){
-    return Math.random();
- }
+}*/
+
 
  

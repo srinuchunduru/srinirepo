@@ -4,15 +4,18 @@ phases:
   install:
     commands:
       - echo Installing micro...
+      - npm install
       - npm i --save micro
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
+      
   build:
     commands:
       - npm build
   post_build:
     commands:
+      - npm run start
 artifacts:
   files:
     - index.js
