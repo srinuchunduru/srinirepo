@@ -1,7 +1,7 @@
 
 const micro = require('micro')
 
-const defaultPort = process.env.PORT || 3443;
+const defaultPort = process.env.PORT || 3000;
 
 function randomNumber (){
     return Math.random();
@@ -13,6 +13,7 @@ const server = micro(async (req, res) => {
     }
   });
 
+  
   server.listen(defaultPort) ;
 
  /*module.exports = (req,res) =>{
